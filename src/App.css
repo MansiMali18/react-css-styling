@@ -1,3 +1,10 @@
-import { createRoot } from "react-dom/client";
-
-const root=createRoot(document.getElementById("root"));
+.card {
+    border: 5px double black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aquamarine;
+    font-size : 10px;
+    display: inline-block;
+  }
+  

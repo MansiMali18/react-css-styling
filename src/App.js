@@ -1,35 +1,44 @@
-function Sayhello()
-{
-      return
-      (
-        <div>
-            <h1>Hello</h1>
-        </div>
-      )
-}
-function GreetingBye()
-{
-       return
-       (
-        <div>
-            <h1>Byee</h1>
-        </div>
-       )
-}
+import "./App.css";
+
+function Greeting(props) {
+    const { name, city, age } = props;
+    return (
+      <div className="card">
+        <h1>
+          I am {name} from {city}. I am {age} years old.
+        </h1>
+      </div>
+    );
+  }
+
+  
+
+
+  function GreetingBye(props) {
+    const { name } = props;
+    return (
+      <div className="card">
+        <h1>
+        Byeee {name}.
+        </h1>
+      </div>
+    );
+  }
+
 function Hlw()
 {
     return
     (
-     <div>
-         <h1>How r u??????????</h1>
+     <div  className="card">
+      <p>  How r u??????????</p>
      </div>
-    )
+    );
 }
 
 export
 
 {
-    Sayhello,
+    Greeting,
     GreetingBye,
     Hlw
-}
+};
